@@ -1,0 +1,7 @@
+package iuh.fit.bai1;
+
+public interface Subject {
+    void register(Observer o);
+    void unregister(Observer o);
+    void notifyObservers();
+}
