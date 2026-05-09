@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  payment-service:
+    build: .
+    ports:
+      - "8084:8084"
+    environment:
+      # RABBITMQ_URL should point to the User Service Machine IP (172.16.56.67)
+      - RABBITMQ_URL=amqp://172.16.40.0
